@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="Ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画像ギャラリー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery">
+    <div class="main-image">
+        <img id="displayedImage" src="img/beer1.jpg" alt="メイン画像">
+    </div>
+    <div class="thumbnails">
+        <img src="img/beer1.jpg" alt="サムネイル1" onclick="changeImage('img/beer1.jpg')">
+        <img src="img/beer2.jpg" alt="サムネイル2" onclick="changeImage('img/beer2.jpg')">
+        <img src="img/beer3.jpg" alt="サムネイル3" onclick="changeImage('img/beer3.jpg')">
+        <img src="img/beer4.jpg" alt="サムネイル4" onclick="changeImage('img/beer4.jpg')">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
