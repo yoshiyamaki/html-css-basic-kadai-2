@@ -1,0 +1,382 @@
+body {
+  width: 100%;
+  max-width: 800px;
+  font-size: 14px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: 30px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ffff;
+  background-color: chartreuse;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+
+
+.border p {
+  padding: 0;
+  font-size: 1.2rem;
+}
+.border {
+  border-spacing: -1;
+  border-bottom: solid 1px black;
+  width: 50%;
+}
+
+#bold {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.text-container {
+  position: relative;
+  display: inline-block;
+}
+
+#text {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 5px 20px;
+  display: block;
+}
+
+.text-main {
+  position: relative;
+  background: white;
+  border: 2px solid #b0301e;
+  z-index: 2;
+}
+
+.text-shadow {
+  position: absolute;
+  top: 8px; 
+  left: 6px; 
+  width: 100%;
+  background: #b0301e;
+  z-index: 1;
+}
+
+.second-main {
+  position: relative;
+  background: white;
+  border: 2px solid #b0301e;
+  z-index: 2;
+}
+
+.second-shadow {
+  position: absolute;
+  top: 8px; 
+  left: 6px; 
+  width: 100%;
+  background: #b0301e;
+  z-index: 1;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+#text-container {
+  position: absolute;
+  top: 70%; /* 画像の中央に配置 */
+  left: 35%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; 
+}
+
+#nomal-container {
+  position: absolute;
+  top: 30%; /* 画像の中央に配置 */
+  left: 35%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; 
+}
+
+#nomal2-container {
+  position: absolute;
+  top: 45%; /* 画像の中央に配置 */
+  left: 36%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; 
+}
+
+@media (max-width:767px) {
+  #text {
+    font-size: 1rem;
+  }
+  #bold {
+    font-size: 1rem;
+  }
+  .header p {
+    font-size: 0.8rem;
+  }
+  .border p {
+    font-size: 0.6rem;
+  }
+}
+
+/* 誰もが活躍できる会社を目指して */
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 30%;
+  padding: 5px;
+  margin: auto;
+}
+
+.item p {
+  font-size: 1.4em;
+}
+
+#center {
+  /* margin-top: 10px; */
+  text-align: center;
+}
+
+.background {
+  font-size: 1.2rem;
+}
+
+.button {
+  width: 80%;
+  height: 80px;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 2rem;
+  border: chartreuse;
+  background-color: chartreuse;
+  border-radius: 40px;
+}
+
+.hoge-button {
+  text-align: center;
+}
+
+.top {
+  font-size: 1.5rem;
+  margin: 100px 0 10px 0;
+}
+
+.margin {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20%;
+}
+
+@media (max-width:767px) {
+  body {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .button {
+    width: 80%;
+    height: 80px;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: chartreuse;
+    background-color: chartreuse;
+    border-radius: 40px;
+  }
+  
+}
+
+/* プライベーを第一に考えています */
+
+.container-box {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.private {
+  margin-top: 140px;
+  font-size: 3rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.underline {
+  border-bottom: 8px solid red;
+  width: 50%;
+  /* text-align: center; */
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.red {
+  color: red;
+}
+
+.container-box img {
+  width: 100%;
+  max-width: 40rem;
+  padding: 3%;
+}
+
+.list {
+  margin: auto;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+@media (max-width:767px) {
+  .underline {
+    border-bottom: 8px solid red;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 80px;
+  }  
+}
+
+/* より自由で楽しい社会を */
+.mishona {
+  margin-top: 100px;
+  font-size: 1.5rem;
+  border-bottom: 8px solid red;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+#freedom {
+  padding: 10px 30px;
+}
+
+#freedom {
+  font-weight: bold;
+}
+
+.free {
+  font-size: 3rem;
+  text-align: left;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.container-bottom {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#space {
+  padding: 12px 0;
+  font-size: 1rem;
+  
+}
+.right {
+   width: 40%;
+}
+
+.right img {
+  /* width: 30%; */
+  margin-top: 20%;
+}
+
+.parent {
+  position: relative;
+  z-index: 2;
+}
+
+/* .child { */
+  /* position: absolute; */
+  /* top: 250%; */
+  /* left: 72%; */
+  /* font-size: 3.74rem; */
+  /* color: crimson; */
+  /* background-color: crimson; */
+  /* z-index: 1; */
+/* } */
+
+@media (max-width:767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .child {
+    /* display: none; */
+    position: absolute;
+  top: 530%;
+  left: 32%;
+  /* min-height: 400px; */
+  font-size: 1.4rem;
+  }
+
+  .mishona {
+    margin-top: 100px;
+    font-size: 1.5rem;
+    border-bottom: 8px solid red;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+}
