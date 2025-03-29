@@ -1,0 +1,24 @@
+* {
+  
+  width: 100%;
+  margin: 0 auto;
+}
+
+.haikei {
+  position: relative;
+}
+
+.castle {
+  /* mix-blend-mode: multiply;  */
+  position: absolute;
+  right: 220px;
+  top: 150px;
+  width: 200px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
