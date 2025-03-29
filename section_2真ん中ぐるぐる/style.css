@@ -1,0 +1,29 @@
+body {
+  background-color: red;
+}
+
+span{
+  display:inline-block; 
+  width:500px;
+  height:500px;
+   margin: 80px 460px; 
+  text-align: center;
+  background: url(img/universe.jpg);
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.circle1{
+  border-radius:100%;
+  box-sizing:border-box;
+  border:10px dotted gold;
+  animation:3s linear infinite rotation;
+}
+
+@keyframes rotation{
+  0%{ transform:rotate(0)}
+  100%{ transform:rotate(360deg);}
+}
