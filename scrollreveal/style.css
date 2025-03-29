@@ -1,0 +1,24 @@
+body {
+  background:url(img/space.jpg);
+}
+.container {
+  max-width: 400px;
+  margin: auto;  
+  /* text-align: center; */
+}
+.row {
+  /* display: flex;  */
+  display: inline-block;
+}
+.box {
+  margin: 10px;
+  width: 100px;
+  height: 90vh;
+  background-color: #79BD9A;
+  /* text-align: center;  */
+}
+
+p {
+  color: #fff;
+  font-size: 2em;
+}
