@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  text-align: justify;
+  padding: 135px 80px 135px 40px;
+}
+
+h2 {
+   padding: 0 150px 0 0; 
+  font-size: 72px;
+  width: 100%;
+}
+
+p {
+  font-size: 16px;
+  width: 100%;
+}
