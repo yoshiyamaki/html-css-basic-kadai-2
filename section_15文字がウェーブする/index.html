@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ウェーブアニメーション</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+
+
+  <div class="container">
+  <h1 class="wave-text">
+    <span>W</span><span>a</span><span>v</span><span>e</span>
+  </h1>
+    
+    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <!-- 外側の円 -->
+      <circle cx="25" cy="25" r="20" fill="#B8E6B8"/>
+      <!-- 内側の小さい円 -->
+      <circle cx="25" cy="25" r="10" fill="#4DAA57"/>
+    </svg>
+
+    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <!-- 大きい三角形（山） -->
+      <polygon points="10,40 40,40 25,10" fill="#4DAA57"/>
+      <!-- 小さい三角形（雪） -->
+      <polygon points="22,18 25,10 28,18" fill="#B8E6B8"/>
+    </svg>
+
+    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <!-- 傘の上部（半円） -->
+      <path d="M10 25 A15 15 0 0 1 40 25" fill="#4DAA57"/>
+      <!-- 持ち手（線） -->
+      <rect x="24" y="25" width="3" height="15" fill="#4DAA57"/>
+    </svg>
+
+    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <!-- 左の矢印 -->
+      <polygon points="10,30 20,30 15,15" fill="#4DAA57"/>
+      <!-- 右の矢印 -->
+      <polygon points="25,30 35,30 30,15" fill="#4DAA57"/>
+    </svg>
+
+    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <!-- 左の山 -->
+      <polygon points="10,40 25,40 17,20" fill="#4DAA57"/>
+      <!-- 右の山 -->
+      <polygon points="25,40 40,40 32,20" fill="#4DAA57"/>
+      <!-- 雪の部分 -->
+      <polygon points="15,25 17,20 19,25" fill="#B8E6B8"/>
+      <polygon points="30,25 32,20 34,25" fill="#B8E6B8"/>
+    </svg>
+    
+  </div>
+
+  
+</body>
+</html>

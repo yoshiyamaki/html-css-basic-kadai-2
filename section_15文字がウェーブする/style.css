@@ -1,0 +1,47 @@
+* {
+  background-color: #f5deb3;
+  font-family: 'Zen Maru Gothic';
+}
+
+.container {
+  display: flex;  /* 必須！ */
+  flex-direction: column;
+  
+}
+
+svg {
+  display: block; /* inline要素をblock化する */
+  margin: 30px 0 0 80px;
+}
+
+
+        .wave-text {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 300px 0  0 200px;
+        }
+
+        .wave-text span {
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .wave-text:hover span {
+            animation: wave 0.6s infinite ease-in-out;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* 各文字に異なる遅延を適用 */
+        .wave-text:hover span:nth-child(1) { animation-delay: 0s; }
+        .wave-text:hover span:nth-child(2) { animation-delay: 0.1s; }
+        .wave-text:hover span:nth-child(3) { animation-delay: 0.2s; }
+        .wave-text:hover span:nth-child(4) { animation-delay: 0.3s; }
+        .wave-text:hover span:nth-child(5) { animation-delay: 0.4s; }
+        .wave-text:hover span:nth-child(6) { animation-delay: 0.5s; }
+    
