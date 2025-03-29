@@ -1,0 +1,39 @@
+html, body {
+  overflow: hidden;
+}
+
+body {
+  background-color: #757575;
+}
+.container {
+  max-width: 400px;
+  margin-left: 34em;  
+   /* position: absolute;  */
+  /* overflow: auto;  */
+  /* text-align: center; */
+  /* width: max-content; */
+    height: 2000px; 
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+.row {
+  /* display: flex;  */
+  display: inline-block;
+  overflow: auto;
+}
+.box {
+  margin: 10px;
+  width: 100px;
+  height: 90vh;
+  background: url(img/constellations.jpg);
+  overflow: auto;
+  /* text-align: center;  */
+}
+
+p {
+  color: #fff;
+  font-size: 2em;
+}
