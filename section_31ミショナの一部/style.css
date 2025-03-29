@@ -1,0 +1,64 @@
+* {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 30%;
+  padding: 5px;
+  margin: auto;
+}
+
+.item p {
+  font-size: 0.8em;
+}
+
+#center {
+  text-align: center;
+}
+
+.button {
+  width: 50%;
+  height: 50px;
+  color: #ffff;
+  font-weight: bold;
+  border: chartreuse;
+  background-color: chartreuse;
+  border-radius: 40px;
+}
+
+.hoge-button {
+  text-align: center;
+}
+
+.top {
+  margin: 2%;
+}
+
+.margin {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+@media (max-width:767px) {
+  body {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+  }
+  
+}
