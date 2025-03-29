@@ -1,0 +1,70 @@
+* {
+  font-family: 'KouzanBrush', serif;
+  margin: 0;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'KouzanBrush';
+  src: url('fonts/KouzanMouhituFontOTF.otf') format('truetype');
+}
+
+.header {
+  box-sizing: border-box; /* padding の影響を受けない */
+  display: flex;
+  flex-direction: row;  /* 横並び */
+  align-items: center;  /* 高さの中央揃え */
+  justify-content: space-between;  /* 両端揃え */
+  padding: 20px;
+  font-size: 2em;
+  background-color: #f5deb3;
+  width: 100%;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.header p {
+  font-size: 1.5em;
+  cursor: pointer; /* ハンバーガーメニューをクリックできるように */
+  margin: 0;
+}
+
+
+.vertical-container {
+  background: url(img/gurade.jpg);
+  width: 100%;
+  writing-mode: vertical-rl; /* 縦書き（右から左） */
+  text-orientation: upright; /* 文字を回転させない */
+  font-family: "游明朝", "Hiragino Mincho Pro", serif;
+  font-size: 24px;
+  line-height: 2;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-container .big {
+  font-size: 9rem;
+}
+
+.castle {
+  width: 600px;
+  opacity: 0;
+  transform: translateY(50px);
+  mix-blend-mode: multiply; /* 画像の白背景を透過風に */
+  filter: brightness(1) contrast(1) opacity(0.8);
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明の白背景 */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap');
