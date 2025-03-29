@@ -1,0 +1,77 @@
+* {
+  background-color: #f5deb3;
+  font-family: 'Zen Maru Gothic';
+}
+
+/* ナビゲーションメニューを横並びに */
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  
+}
+
+/* メニューアイテムのスタイル */
+.menu-item {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+}
+
+/* アンダーラインを作る（最初は見えない） */
+.menu-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #000000; /* Instagramカラー */
+  transition: width 0.3s ease-out;
+}
+
+/* 🏄‍♂️ ホバー時に左から右にアンダーラインが伸びる */
+.menu-item:hover::after {
+  width: 100%;
+}
+
+/* 外部リンクのスタイル */
+.external-link {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2f7045;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* テキストとアイコンの間隔 */
+}
+
+/* 🔳 四角 + ↗ 矢印 */
+.external-link::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #2f7045; /* 四角い枠 */
+    position: relative;
+    transform: rotate(45deg); /* 斜め回転 */
+    margin-left: 5px;
+}
+
+/* ↗ 矢印の線 */
+.external-link::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #2f7045; /* 上の線 */
+    border-right: 2px solid #2f7045; /* 右の線 */
+    position: absolute;
+    right: -3px;
+    top: 2px;
+}
+
