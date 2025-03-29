@@ -1,0 +1,9 @@
+.slide-items {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-items img {
+  width: 100%;
+  object-fit: cover;
+}
