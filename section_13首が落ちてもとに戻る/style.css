@@ -1,0 +1,139 @@
+/* 人の形 */
+.person {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  animation: walk 3s ease-in-out forwards;
+}
+
+/* 頭 */
+.head {
+  width: 30px;
+  height: 30px;
+  background: #FFD700;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center top;
+  animation: bowHead 1s 3s ease-in-out forwards, fall 1s 4s ease-in-out forwards, roll 2s 5s linear forwards, pickUp 2s 8s ease-in-out forwards;
+}
+
+/* 体 */
+.body {
+  width: 20px;
+  height: 50px;
+  background: blue;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: squat 1s 7s ease-in-out forwards, standUp 1s 9s ease-in-out forwards;
+}
+
+/* 腕 */
+.arms {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arm {
+  width: 10px;
+  height: 40px;
+  background: brown;
+  transform-origin: top;
+}
+
+.left {
+  animation: reachOut 1s 7s ease-in-out forwards, liftHead 1s 8s ease-in-out forwards;
+}
+
+/* 足（2本） */
+.legs {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.leg {
+  width: 10px;
+  height: 30px;
+  background: black;
+  animation: walkLegs 0.5s infinite alternate;
+}
+
+.left {
+  animation-delay: 0s;
+}
+
+.right {
+  animation-delay: 0.25s;
+}
+
+/* 歩くアニメーション */
+@keyframes walk {
+  0% { transform: translateX(-100px); }
+  100% { transform: translateX(50vw); }
+}
+
+/* 頭だけお辞儀 */
+@keyframes bowHead {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(30deg); } 
+  100% { transform: rotate(0deg); }
+}
+
+/* 頭がポロっと落ちる */
+@keyframes fall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100px); } /* 下に落ちる */
+}
+
+/* 頭が転がる */
+@keyframes roll {
+  0% { transform: translateY(100px) translateX(0) rotate(0deg); }
+  100% { transform: translateY(100px) translateX(200px) rotate(720deg); } /* 転がっていく */
+}
+
+/* しゃがむ */
+@keyframes squat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(20px); }
+}
+
+/* 立ち上がる */
+@keyframes standUp {
+  0% { transform: translateY(20px); }
+  100% { transform: translateY(0); }
+}
+
+/* 手を伸ばす */
+@keyframes reachOut {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(45deg); } /* 手を前に出す */
+}
+
+/* 頭を拾う */
+@keyframes liftHead {
+  0% { transform: translateY(100px) translateX(200px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
+/* 頭を元の位置に戻す */
+@keyframes pickUp {
+  0% { transform: translateY(100px) translateX(200px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
+/* 足の交互アニメーション */
+@keyframes walkLegs {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
