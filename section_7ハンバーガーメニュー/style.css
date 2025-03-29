@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+}
+
+.menu-icon {
+  font-size: 54px;
+  cursor: pointer; 
+  display: none; 
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin: 0 15px;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* スマホ用メニュー */
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block; 
+  }
+
+  .nav-menu {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #333;
+      display: none;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-menu ul {
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  .nav-menu ul li {
+      margin: 10px 0;
+  }
+
+  .nav-menu.active {
+      display: flex;
+  }
+}
