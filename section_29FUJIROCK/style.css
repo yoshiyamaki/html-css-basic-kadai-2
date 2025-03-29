@@ -1,0 +1,64 @@
+* {
+  width: 100%;
+  /* background-color: bisque; */
+}
+
+.main {
+  position: relative;
+}
+.logo-red {
+  position: absolute;
+  top: 10px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.logo {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.logo {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  opacity: 0; /* 初めは透明 */
+  animation: fadeIn 2s ease-in-out forwards; /* 2秒かけてフェードイン */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    opacity: 0; /* 初めは透明 */
+    transition: opacity 2s ease-in-out; /* 2秒で透明度を変化 */
+}
+
+.logo-container:hover .overlay-text {
+    opacity: 1; /* ホバー時に表示 */
+}
+
