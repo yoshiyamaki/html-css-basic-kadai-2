@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  max-width: 800px;
+}
+
+.container-box {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.underline {
+  border-bottom: 5px solid red;
+  width: 40%;
+  /* text-align: center; */
+  margin: auto;
+}
+
+.red {
+  color: red;
+}
+
+.container-box img {
+  width: 100%;
+  max-width: 40rem;
+  padding: 3%;
+}
+
+.list {
+  margin: auto;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
