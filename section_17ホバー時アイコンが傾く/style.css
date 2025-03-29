@@ -1,0 +1,47 @@
+* {
+  background-color: #f5deb3;
+  font-family: 'Zen Maru Gothic';
+  
+}
+
+/* ボタンを横並びにする */
+.social-buttons {
+  display: flex;
+  gap: 15px; /* ボタン同士の間隔 */
+}
+
+/* ボタンの基本スタイル */
+.social-btn {
+  
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 400px 0 0 150px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out; /* なめらかに傾く */
+}
+
+/* Instagramボタンの色 */
+.instagram {
+  background-color: #E1306C;
+  color: white;
+}
+
+/* X（旧Twitter）ボタンの色 */
+.x {
+  background-color: #000;
+  color: white;
+}
+
+/* LINEボタンの色 */
+.line {
+  background-color: #06C755;
+  color: white;
+}
+
+/* 🏄‍♂️ ホバー時に斜めに傾くアニメーション */
+.social-btn:hover {
+  transform: rotate(-10deg);
+}
