@@ -1,0 +1,29 @@
+* {
+  background: url(img/constellations.jpg);
+}
+
+body { background: #f8f4f4; overflow: hidden; margin: 0; }
+.shape {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    animation: moveShrink 5s linear forwards;
+}
+.circle { background: pink; border-radius: 50%; }
+.square { background: lightblue; }
+.octagon {
+    background: lightgreen;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.cloud {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 20px 10px 0 #fff, -20px 10px 0 #fff, 10px -10px 0 #fff, -10px -10px 0 #fff;
+}
+@keyframes moveShrink {
+    0% { transform: translateX(0) scale(1); }
+    100% { transform: translateX(100vw) scale(0.5); opacity: 0; }
+}
