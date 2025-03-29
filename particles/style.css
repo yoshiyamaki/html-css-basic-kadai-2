@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+p {
+  position: absolute; 
+  left: calc(100% - 800px);
+  width: 50px;  
+  margin: 1em auto 0;
+  color: #fff;
+  text-align: center;
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 2.5;
+  letter-spacing: 0.3em;
+  text-shadow: 5px 5px 2px gray;
+  /* opacity: 0.6; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #d2691e;
+}
+
+.sale p {
+  left: calc(100% - 700px);
+}
