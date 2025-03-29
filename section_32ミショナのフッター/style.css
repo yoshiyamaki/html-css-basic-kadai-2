@@ -1,0 +1,66 @@
+body {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+#freedom {
+  padding: 10px 30px;
+}
+
+#freedom {
+  font-weight: bold;
+}
+
+h1 {
+  
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+#space {
+  padding: 12px 0;
+  
+}
+.right {
+   width: 40%;
+}
+
+.right img {
+  
+  margin-top: 20%;
+}
+.parent {
+  position: relative;
+  z-index: 2;
+}
+.child {
+  position: absolute;
+  top: 200px;
+  left: 62%;
+  
+  font-size: 3.74rem;
+  
+  color: crimson;
+  background-color: crimson;
+  z-index: 1;
+}
+
+@media (max-width:767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .child {
+    display: none;
+  }
+}
