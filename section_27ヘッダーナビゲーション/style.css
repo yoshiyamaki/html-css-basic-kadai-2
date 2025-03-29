@@ -1,0 +1,37 @@
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /* background-color: black; */
+}
+.logo {
+  font-weight: 700;
+  padding-left: 14px;
+}
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: none;
+  background: transparent;
+  appearance: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  /* 追記 */
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-menu__bar {
+  display: inline-block;
+  width: 44%;
+  height: 2px;
+  background: #242424;
+  position: absolute;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  transition: .5s;
+}
