@@ -1,0 +1,40 @@
+
+
+.box1 img {
+  margin: 0 auto;
+  height: 100%; 
+  position: relative;
+  z-index: 10;
+}
+
+.box2 img {
+  width: 40em;
+  height: 20em;
+  
+  position: absolute;
+  top: 400px;
+  left: 300px;
+  z-index: 20;
+  /* opacity: 0.8; */
+  /* mix-blend-mode: screen; 
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); */
+  /* background-color: black; */
+}
+
+.box3 {
+  /* margin: auto; */
+  padding-top: 20px;
+  text-align: center;
+  line-height: 2.5em;
+  width: 35em;
+  height: 10em;
+  opacity: 0.3; 
+  position: absolute; 
+  top: 480px; 
+  left: 340px; 
+   z-index: 30; 
+  background-color: #fff;
+}
+
+
+
