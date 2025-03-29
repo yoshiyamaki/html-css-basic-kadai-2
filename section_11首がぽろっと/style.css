@@ -1,0 +1,43 @@
+/* 人の形 */
+.person {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  animation: walk 3s ease-in-out forwards;
+}
+
+/* 頭 */
+.head {
+  width: 30px;
+  height: 30px;
+  background: #FFD700;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center top; /* 回転の基準を頭の上に */
+  animation: bowHead 1s 3s ease-in-out forwards;
+}
+
+/* 体 */
+.body {
+  width: 20px;
+  height: 50px;
+  background: blue;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 歩くアニメーション */
+@keyframes walk {
+  0% { transform: translateX(-100px); }
+  100% { transform: translateX(50vw); }
+}
+
+/* 頭だけお辞儀 */
+@keyframes bowHead {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(30deg); } /* こっちに向かってお辞儀 */
+  100% { transform: rotate(0deg); }
+}
