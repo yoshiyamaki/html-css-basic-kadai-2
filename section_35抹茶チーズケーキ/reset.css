@@ -1,0 +1,50 @@
+/* すべての要素のマージンとパディングをリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* リンクのデフォルトスタイルをリセット */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* リストのデフォルトスタイルをリセット */
+ul, ol {
+  list-style: none;
+}
+
+/* 見出しの余白をリセット */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* 画像の最大幅を調整 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ボタンのデフォルトスタイルをリセット */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* フォーム要素のデフォルトスタイルを調整 */
+input, textarea, button, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* bodyのデフォルトフォント設定 */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
