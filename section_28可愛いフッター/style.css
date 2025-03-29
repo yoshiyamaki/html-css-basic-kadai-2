@@ -1,0 +1,72 @@
+* {
+  background-color: rgb(235,206,176);
+  font-size: 62.5%;
+  font-family: halyard-display, "Zen Kaku Gothic New", YakuHanJPs, 游ゴシック体, YuGothic, 
+}
+
+main {
+  height: 700px;
+}
+footer {
+  background-color: rgb(235,206,176);
+}
+
+.bottom {
+  position: relative;
+  background-color: #abb8c3;
+  height: 200px;
+  
+  
+}
+
+.bottom p {
+  font-size: 2rem;
+  position: absolute;
+  left: 400px;
+  top: 50px;
+  text-align: center;
+  /* padding: 25px; */
+  background-color: #abb8c3;
+  color: #ffff;
+}
+
+h1 {
+  padding: 40px;
+  font-size: 2rem;
+  text-align: center;
+  border-top: 1px solid black;
+
+}
+
+footer p {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.container img {
+  width: 60px;
+  padding: 60px 0;
+
+}
+.icon {
+  transition: opacity 0.3s ease;
+}
+
+.icon:hover {
+  content: url('img/wifi.svg');
+}
+.bottom-text {
+  padding: 30px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+
