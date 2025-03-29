@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  font-family: "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "MSP明朝" , "MS PMincho" , serif;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  color: #ffff;
+  background-color: #52B064;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: white;  */
+  z-index: 1000; /* 他の要素より前面に表示 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 影をつけて見やすくする */
+}
+
+.container {
+  margin: auto;
+  margin-top: 50%;
+  max-width: 750px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#image {
+  width: 45%;
+   height: auto; 
+}
+
+.text {
+  padding: 10px;
+  height: auto;
+  width: 100px;
+  /* margin: auto; */
+}
+
+#uzu {
+  width: 60px;
+  /* margin: auto; */
+  /* text-align: center; */
+}
